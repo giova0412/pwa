@@ -3,8 +3,8 @@
 Aplicación web progresiva (React + Vite).
 
 ## Demo
+https://giova0412.github.io/pwa/ .
 
-https://giova0412.github.io/pwa/
 
 ## Desarrollo
 
