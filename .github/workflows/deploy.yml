@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: appwebreact
+        working-directory: pwa/appwebreact
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: appwebreact/package-lock.json
+          cache-dependency-path: pwa/appwebreact/package-lock.json
 
       - name: Instalar dependencias
         run: npm ci
@@ -43,7 +43,7 @@ jobs:
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: appwebreact/dist
+          path: pwa/appwebreact/dist
 
   deploy:
     needs: build

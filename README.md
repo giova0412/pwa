@@ -9,7 +9,7 @@ https://giova0412.github.io/pwa/
 ## Desarrollo
 
 ```bash
-cd appwebreact
+cd pwa/appwebreact
 npm install
 npm run dev
 ```
