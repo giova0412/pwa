@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  // Base para GitHub Pages: https://giova0412.github.io/pwa/
+  base: "/pwa/",
   plugins: [
     react(),
     VitePWA({
@@ -22,20 +24,21 @@ export default defineConfig({
         name: "First PWA",
         short_name: "FPWA",
         description: "App React+Vite PWA",
-        start_url: "/",
+        start_url: "./",
+        scope: "./",
         // Habilita la instalacion en celulares
         display: "standalone",
         background_color: "#fff",
         theme_color: "#228be6",
         screenshots: [
           {
-            src: "/screenshots/screenshot-wide.png",
+            src: "screenshots/screenshot-wide.png",
             sizes: "1280x720",
             type: "image/png",
             form_factor: "wide",
           },
           {
-            src: "/screenshots/screenshot-narrow.png",
+            src: "screenshots/screenshot-narrow.png",
             sizes: "384x520",
             type: "image/png",
             form_factor: "narrow",
@@ -43,19 +46,19 @@ export default defineConfig({
         ],
         icons: [
           {
-            src: "/icons/icon-192.png",
+            src: "icons/icon-192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "any",
           },
           {
-            src: "/icons/icon-512.png",
+            src: "icons/icon-512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any",
           },
           {
-            src: "/icons/icon-maskable-512.png",
+            src: "icons/icon-maskable-512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
